@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const RestaurantContext = createContext();
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://pos-co0q.onrender.com/api';
 
 // Load cart from localStorage
 const loadCartFromStorage = () => {

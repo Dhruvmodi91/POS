@@ -23,7 +23,7 @@ const WaiterInterface = () => {
     totalToday: 0
   });
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://pos-co0q.onrender.com/api';
 
   // Determine which tab to show based on URL
   useEffect(() => {

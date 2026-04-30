@@ -11,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
   const { login } = useAuth(); // Use AuthContext login method
 
-  const API_URL =  "http://localhost:5000/api";
+  const API_URL =  "https://pos-co0q.onrender.com/api";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -20,7 +20,7 @@ const KitchenScreen = () => {
   const [showOrderModal, setShowOrderModal] = useState(false);
   const [selectedOrder, setSelectedOrder] = useState(null);
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://pos-co0q.onrender.com/api';
 
   // Fetch kitchen orders on component mount
   useEffect(() => {

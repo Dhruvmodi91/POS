@@ -15,7 +15,7 @@ const Signup = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const API_URL =  "http://localhost:5000/api";
+  const API_URL =  "https://pos-co0q.onrender.com/api";
 
   const handleChange = (e) => {
     setFormData({
