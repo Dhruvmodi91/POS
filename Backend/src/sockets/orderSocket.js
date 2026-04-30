@@ -5,13 +5,15 @@ let io;
 const initializeSocket = (server) => {
   io = socketIO(server, {
     cors: {
-      origin: ["http://localhost:5173", "http://localhost:5174"],
+      origin: [
+        "https://pos-restaurant-system.netlify.app",
+        "https://pos-restaurant-system.netlify.app",
+      ],
       credentials: true,
     },
   });
 
   io.on("connection", (socket) => {
-
     socket.on("join-order-room", (orderId) => {
       socket.join(`order-${orderId}`);
     });
@@ -21,8 +23,7 @@ const initializeSocket = (server) => {
       io.emit("kitchen-update", data);
     });
 
-    socket.on("disconnect", () => {
-    });
+    socket.on("disconnect", () => {});
   });
 };
 
